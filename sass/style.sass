@@ -1,0 +1,211 @@
+*
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+body
+    font-family: sans-serif
+@font-face
+    font-family: 'montserrat'
+    src: url('../fonts/montserrat/Montserrat-Medium.otf')
+    font-weight: normal
+    font-style: normal
+.text-white
+    color: white
+.wrapper
+    background-image: url("../img/wrapper.png")
+    background-size: cover
+    background-attachment: fixed
+    background-repeat: no-repeat
+.phone
+    position: absolute
+    width: 296px
+    height: 592px
+    right: 30px
+    bottom: 30px
+    background: #232A32
+    border-radius: 38px
+    display: flex
+    justify-content: center
+    align-items: center
+.inner-phone
+    width: 288px
+    height: 585px
+    background: #232A32
+    box-sizing: border-box
+    border-radius: 38px
+    border: 1.5px solid rgba(18, 23, 29, 0.5)
+    padding: .7rem
+.bg-phone-img
+    background: url('../img/bg-phone-img.png')
+    background-size: cover
+    background-repeat: no-repeat
+    border-radius: 28px
+.phone-top
+    display: flex
+    height: 1.5rem
+    justify-content: space-around
+    align-items: center
+    padding: 0 1rem
+    width: 240px
+    box-sizing: border-box
+    width: 268px
+    margin: 0 auto
+.phone-time
+    width: 36px
+    height: 17px
+    font-family: 'montserrat', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    color: #fff
+.phone-top-middle
+    width: 118px
+    height: 21px
+    background: #232a32
+    border-radius: 0px 0px 10.5px 10.5px
+    position: relative
+    align-self: flex-start
+.phone-voice
+    width: 27px
+    height: 4px
+    background: #12161f
+    border-radius: 2px
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 5px
+.phone-camera
+    width: 7px
+    height: 7px
+    background: #12161f
+    border-radius: 50%
+    position: absolute
+    left: 70%
+    top: 3px
+.phone-parameters
+    display: flex
+    height: 2rem
+    width: 3rem
+    justify-content: space-between
+.fa
+    font-size: .7rem !important
+    padding-top: 0.6rem
+.voice-button
+    position: absolute
+    width: 4px
+    height: 77px
+    background: #232A32
+    border-radius: 5px
+    right: -2px
+    top: 150px
+.switch-button
+    position: absolute
+    width: 4px
+    height: 25px
+    background: #232A32
+    border-radius: 5px
+    left: -2px
+    top: 100px
+.option-button,.param-button
+    position: absolute
+    width: 4px
+    height: 48px
+    background: #232A32
+    border-radius: 5px
+    left: -3px
+.option-button
+    top: 140px
+.param-button
+    top: 200px
+.apps
+    width: 220px
+    height: 320px
+    margin: 50px auto 0
+.app
+    width: 60px
+    height: 60px
+    border-radius: 15px
+    float: left
+    margin-right: 20px
+    margin-bottom: 25px
+    display: flex
+    justify-content: center
+    align-items: center
+    &:nth-child(3n+0)
+        margin-right: 0
+.app-taxi
+    background: #FFC000
+    & .app-img
+        width: 29px
+        height: 26px
+.app-location
+    background: #E03C3B
+    & .app-img
+        width: 22px 
+        height: 30px 
+.app-pencil
+    background: #834EB8
+    & .app-img
+        width: 29px
+        height: 29px
+.app-uber
+    background: #4595ED
+    & .app-img
+        width: 29px
+        height: 25px
+.app-user
+    background: #FF7200
+    & .app-img
+        width: 24px
+        height: 29px
+.app-settings
+    background: #333333
+    & .app-img
+        width: 29px
+        height: 29px
+.app-news
+    background: #E03C3B
+    & .app-img
+        border-radius: 15px
+
+
+
+.main-apps
+    width: 220px
+    height: 60px
+    background: rgba(0, 0, 0, 0.3)
+    backdrop-filter: blur(10px)
+    border-radius: 15px
+    margin: 70px auto
+    box-sizing: border-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 .8rem
+.main-app
+    width: 46.97px
+    height: 46.97px
+    border-radius: 15px
+    display: flex
+    justify-content: center
+    align-items: center 
+.phone-app
+    background: #00D16C
+    & .app-img
+        width: 25px
+        height: 25px
+.envelope-app
+    background: #00A3FF
+    text-align: center
+    height: 42px
+    padding-top: 5px
+    & .fa-envelope
+        font-size: 1.5rem !important
+        vertical-align: sub
+.user-app
+    background: #00D36C
+    & .app-img
+        width: 25px
+        height: 28px
