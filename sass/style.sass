@@ -1,8 +1,6 @@
 *
     margin: 0
     padding: 0
-    width: 100%
-    height: 100%
 body
     font-family: sans-serif
 @font-face
@@ -10,13 +8,26 @@ body
     src: url('../fonts/montserrat/Montserrat-Medium.otf')
     font-weight: normal
     font-style: normal
+@font-face
+    font-family: 'montserrat-regular'
+    src: url('../fonts/montserrat/Montserrat-Regular.otf')
+    font-weight: normal
+    font-style: normal
+.montserrat
+    font-family: 'montserrat'
+.montserrat-regular
+    font-family: 'montserrat-regular'
 .text-white
     color: white
+.text-center
+    text-align: center
 .wrapper
     background-image: url("../img/wrapper.png")
     background-size: cover
     background-attachment: fixed
     background-repeat: no-repeat
+    width: 100%
+    height: 100vh
 .phone
     position: absolute
     width: 296px
@@ -28,6 +39,14 @@ body
     display: flex
     justify-content: center
     align-items: center
+.second-phone
+    right: 360px
+.third-phone
+    right: 690px
+.fourth-phone
+    right: 1020px
+.fiveth-phone
+    right: 1350px
 .inner-phone
     width: 288px
     height: 585px
@@ -41,6 +60,10 @@ body
     background-size: cover
     background-repeat: no-repeat
     border-radius: 28px
+    height: 560px
+.bg-light-phone
+    border-radius: 28px
+    background: #f7f7f7
 .phone-top
     display: flex
     height: 1.5rem
@@ -60,6 +83,8 @@ body
     font-size: 14px
     line-height: 17px
     color: #fff
+.dark-time
+    color:#131313
 .phone-top-middle
     width: 118px
     height: 21px
@@ -133,8 +158,11 @@ body
     display: flex
     justify-content: center
     align-items: center
+    transition: .3s
     &:nth-child(3n+0)
         margin-right: 0
+    &:hover
+        transform: scale(1.1)
 .app-taxi
     background: #FFC000
     & .app-img
@@ -169,6 +197,8 @@ body
     background: #E03C3B
     & .app-img
         border-radius: 15px
+        width: 60px
+        height: 60px
 
 
 
@@ -191,6 +221,9 @@ body
     display: flex
     justify-content: center
     align-items: center 
+    transition: .3s
+    &:hover
+        transform: scale(1.1)
 .phone-app
     background: #00D16C
     & .app-img
@@ -200,12 +233,298 @@ body
     background: #00A3FF
     text-align: center
     height: 42px
-    padding-top: 5px
+    
     & .fa-envelope
         font-size: 1.5rem !important
-        vertical-align: sub
+        padding-top: 0 !important
 .user-app
     background: #00D36C
     & .app-img
         width: 25px
         height: 28px
+
+
+.phone-navigation
+    height: 70px
+    border-bottom: 1px solid #DDDDDE
+    background: #F7F7F7
+.phone-navigation-call
+    border-bottom: none
+.nav-location
+    display: flex
+    height: 30px
+    align-items: center
+    position: relative
+    padding-top: 0.8rem
+    
+.location
+    color: #4595ED
+    display: flex
+    width: 60px
+    align-items: center
+    position: absolute
+    padding-left: .8rem
+    font-size: .8rem
+.fa.fa-arrow-left
+    width: 16px
+    height: 17px
+    padding-top: 0
+    display: flex
+    align-items: center
+    font-size: .8rem
+.location-name
+    width: 50px
+.ticket
+    padding-top: 0
+    color: #A4A4A4
+    font-size: 12px
+    margin: auto 
+.notification-closed
+    color: #E03C3B
+    font-family: 'montserrat-regular'
+
+
+
+.chat-place
+    background: #F0EFF4
+    height: 465px
+    border-radius: 0 0 28px 28px
+
+.chat-time
+    color: #A4A4A4
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 10px
+    padding: 1rem 0
+    height: 10px
+.chat-typing
+    display: flex
+    flex-direction: column
+    height: 340px
+    padding: 0.8rem
+    box-sizing: border-box
+    overflow: auto
+.primal-message
+    background: #4595ED
+    color: #ffffff
+    padding: 0.5rem 1rem
+    border-radius: 30px
+    align-self: flex-end
+    margin-bottom: 0.8rem 
+    font-family: 'montserrat-regular'
+    font-weight: 300
+    font-style: normal
+    font-size: 13px  
+.secondary-message
+    color: #333
+    background: #E5E6EA
+    padding: 0.5rem 1rem
+    border-radius: 30px
+    align-self: flex-start
+    margin-bottom: 0.8rem
+    font-family: 'montserrat-regular'
+    font-weight: 300
+    font-style: normal
+    font-size: 13px
+.estimate-title
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    text-transform: uppercase
+    color: #A4A4A4
+
+.emojies
+    display: flex
+    margin: 0.3rem auto
+    width: 100px
+    justify-content: space-between
+.emoji-circle
+    border: 0.5px solid #A4A4A4
+    border-radius: 50%
+    width: 26px
+    height: 26px
+    display: flex
+    justify-content: center
+    align-items: center
+.microphone
+    width: 134px
+    height: 5px
+    border-radius: 100px
+    background: #232A32
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 30px
+.input-message
+    width: 220px
+    height: 33px
+    border-radius: 16.5px
+    border: 0.5px solid #D0D0D0
+    background: #E5E6EA
+    outline: none
+    margin: 0.8rem 1.2rem
+    box-sizing: border-box
+    padding-left: 1rem
+    font-style: normal
+    font-weight: 300
+    font-size: 12px
+    line-height: 15px
+    color: rgba(51, 51, 51, 0.3)
+
+.notification-pending
+    color: #FFC000
+    font-weight: 500
+.notification-message
+    margin-left: 0.8rem
+    line-height: 17px
+    font-size: 14px
+    font-style: normal
+    font-weight: 500
+
+
+.complaint
+    height: 465px
+    background: #F0EFF4
+    border-radius: 0 0 28px 28px
+    overflow: auto
+.submission-form
+    height: 440px
+.complaint-title
+    background: #fff
+    margin: 1rem 0 .5rem
+    padding: 0.7rem
+.complaint-intro
+    font-size: 0.6rem
+    color: #A4A4A4
+    font-weight: normal
+.complaint-text
+    width: 246px !important
+    height: 85px
+    background: #ffffff
+    outline: none
+    border: none
+    padding: 0.5rem
+    resize: none
+    font-size: 0.7rem
+
+
+.tickets-column
+    
+    height: 465px
+    overflow: auto
+    background: #F0EFF4
+    border-radius: 0 0 28px 28px
+    overflow: auto
+    
+
+
+.send,.create
+    width: 220px
+    border: none
+    background: linear-gradient(180deg, #1DCC58 0%, #0E963C 100%)
+    border-radius: 16.5px
+    box-sizing: border-box
+    padding: 0.5rem
+    color: white
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 50px
+    font-weight: normal
+
+
+.ticket-block
+    background: #FEFEFE
+    margin-bottom: 0.5rem
+    padding: 0.6rem
+    &:first-child
+        margin-top: 1rem
+.ticket-nav
+    display: flex
+    justify-content: space-between
+.ticket-state
+    font-size: 12px
+.ticket-text
+    margin-top: 0.5rem
+    font-size: 14px
+    color: #333333
+.ticket-state-closed
+    color: #E03C3B
+.ticket-state-opened
+    color: #15B84C
+
+
+
+.sevent-phone
+    right: 360px
+.add-submission
+    margin: 1rem
+    font-weight: normal
+    font-family: "montserrat-regular"
+
+
+.weazel-logo
+    margin: 4.5rem auto 0
+.phone-navigation-logo
+    height: 95px
+
+
+.submission-report
+    padding: 1rem .6rem 0
+    display: flex
+    justify-content: space-between
+.submission-text, .submission-cost
+    font-size: 12px
+    color: #404040
+
+
+.call-form
+    height: 465px
+    background: #F7F7F7
+    border-radius: 0 0 28px 28px
+.call-number
+    font-size: 18px
+    font-family: 'montserrat-regular'
+    // font-weight: normal
+    padding: 1rem 0 1.5rem
+    text-align: center
+.call-numbers
+    width: 184px
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.call-num
+    width: 56px
+    height: 56px
+    background: #EEEEEE
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 32px
+    font-weight: normal
+    font-family: 'montserrat-regular'
+    margin-bottom: 0.5rem
+.call-num-zero
+    margin: 0 auto
+.call-logo
+    background: #1DCC58
+    width: 56px
+    height: 56px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    margin: 1.5rem auto
+
+.remove-sign
+    width: 25.25px
+    height: 16.16px
+    background: url('../img/remove.png')
+    text-align: center
+    position: absolute
+    right: 60px
+    bottom: 110px
