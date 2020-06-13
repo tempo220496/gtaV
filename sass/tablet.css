@@ -1,0 +1,157 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "montserrat-extra-light";
+  src: url("../fonts/montserrat/Montserrat-ExtraLight.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+.montserrat-extra-light {
+  font-family: "montserrat-extra-light";
+}
+
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrapper {
+  background-image: url("../img/wrapper.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.tablet {
+  width: 1077px;
+  height: 742px;
+  background: #232A32;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablet-screen {
+  width: 1027px;
+  height: 696px;
+  background-color: #000000;
+  border-radius: 20px;
+}
+
+.tablet-top {
+  color: white;
+  display: flex;
+  height: 34px;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+
+.tablet-wifi, .tablet-battery {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.tablet-time {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  position: absolute;
+  top: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tablet-wifi p {
+  margin-left: 0.7rem;
+}
+
+.tablet-battery p {
+  margin-right: 0.7rem;
+}
+
+.main-page {
+  background: url("../img/tablet-theme.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 0.75rem 1.5rem;
+}
+
+.main-page .tablet-time {
+  font-size: 4rem;
+}
+
+.table-date {
+  margin-top: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.main-apps {
+  width: 424px;
+  height: 93px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3rem;
+}
+
+.main-apps .fa {
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-apps .fa-home {
+  background: #4CD137;
+}
+
+.main-apps .fa-shopping-bag {
+  background: #FBC531;
+}
+
+.main-apps .fa-shopping-cart {
+  background: #00A8FF;
+}
+
+.main-apps .fa-users {
+  background: #E84118;
+}
+
+.main-apps .fa-gear {
+  background: #353B48;
+}
+
+/*# sourceMappingURL=tablet.css.map */
