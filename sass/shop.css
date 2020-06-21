@@ -52,6 +52,16 @@ html, body {
   height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
 .shop {
   width: 810px;
   height: 550px;
@@ -62,16 +72,9 @@ html, body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-
-
-
-
-
-
-
-
-
+.shop-catalogue {
+  width: 100%;
+}
 
 
 
@@ -118,9 +121,7 @@ html, body {
   text-transform: uppercase;
 }
 
-.shop-catalogue {
-  width: 100%;
-}
+
 
 
 
@@ -209,9 +210,6 @@ html, body {
 .catalogue-item:nth-child(4n+0) {
   margin-right: 0;
 }
-.catalogue-item:nth-child(4n+0) .item-price {
-  z-index: 100;
-}
 
 .item-icon {
   position: absolute;
@@ -241,7 +239,6 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  vertical-align: bottom;
   box-sizing: border-box;
   padding-top: 0.5rem;
 }
